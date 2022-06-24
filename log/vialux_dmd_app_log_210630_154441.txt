@@ -1,0 +1,36 @@
+2021-06-30T15:45:53|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\ScopeFoundry\hardware.py", line 160, in <lambda>
+    op_button.clicked.connect(lambda checked, f=op_func: f())
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_hw.py", line 77, in import_pattern
+    imgSeq = io.imread(tiffile)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\skimage\io\_io.py", line 48, in imread
+    img = call_plugin('imread', fname, plugin=plugin, **plugin_args)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\skimage\io\manage_plugins.py", line 209, in call_plugin
+    return func(*args, **kwargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\skimage\io\_plugins\tifffile_plugin.py", line 37, in imread
+    return tif.asarray(**kwargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\tifffile\tifffile.py", line 3115, in asarray
+    result = stack_pages(pages, out=out, maxworkers=maxworkers)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\tifffile\tifffile.py", line 15266, in stack_pages
+    for _ in executor.map(func, pages, range(npages)):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\concurrent\futures\_base.py", line 586, in result_iterator
+    yield fs.pop().result()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\concurrent\futures\_base.py", line 425, in result
+    return self.__get_result()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\concurrent\futures\_base.py", line 384, in __get_result
+    raise self._exception
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\tifffile\tifffile.py", line 15257, in func
+    page.asarray(lock=filecache.lock, out=out[index], **kwargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\tifffile\tifffile.py", line 6306, in asarray
+    _fullsize=False,
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\tifffile\tifffile.py", line 6154, in segments
+    yield decode(segment)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\tifffile\tifffile.py", line 6139, in decode
+    result = keyframe.decode(*args, **decodeargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\tifffile\tifffile.py", line 5790, in decode
+    raise ValueError(f'TiffPage {self.index}: {exc}')
+ValueError: TiffPage 0: <COMPRESSION.CCITTRLE: 2> not supported
+
+2021-06-30T16:05:28|ERROR|vialux_dmd_app|tried to disconnect VialuxDmdHW: 'ALP4' object has no attribute '_ALPLib'

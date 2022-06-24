@@ -1,0 +1,9 @@
+2021-06-25T18:01:10|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\ScopeFoundry\logged_quantity.py", line 241, in update_value
+    self.hardware_set_func(self.val)
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_device.py", line 54, in invert_pattern
+    self.dmd.ProjControl(ALP_PROJ_INVERSION, not ALP_DEFAULT)
+  File "C:\Programmi laboratorio\Python\VialuxDMDlibraries\ALP4.py", line 901, in ProjControl
+    self._checkError(self._ALPLib.AlpProjControl(self.ALP_ID, controlType, ct.c_long(value)),
+AttributeError: 'ALP4' object has no attribute '_ALPLib'
+

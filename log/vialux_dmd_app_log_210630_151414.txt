@@ -1,0 +1,15 @@
+2021-06-30T15:14:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\ScopeFoundry\hardware.py", line 208, in enable_connection
+    raise err
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_hw.py", line 49, in connect
+    self.vialux = VialuxDmdDevice()
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_device.py", line 17, in __init__
+    dmd.Initialize()
+  File "C:\Programmi laboratorio\Python\VialuxDMDlibraries\ALP4.py", line 415, in Initialize
+    self._checkError(self._ALPLib.AlpDevAlloc(DeviceNum, ALP_DEFAULT, ct.byref(self.ALP_ID)), 'Cannot open DMD.')
+  File "C:\Programmi laboratorio\Python\VialuxDMDlibraries\ALP4.py", line 395, in _checkError
+    raise ALPError(returnValue)
+ALP4.ALPError: The specified ALP device has not been found or is not ready.
+

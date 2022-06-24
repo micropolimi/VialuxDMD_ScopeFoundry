@@ -1,0 +1,12 @@
+2021-06-25T15:53:19|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\ScopeFoundry\hardware.py", line 160, in <lambda>
+    op_button.clicked.connect(lambda checked, f=op_func: f())
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_hw.py", line 77, in import_pattern
+    imgSeq = np.pad(imgSeq,((0,0),(pady,pady),(padx,padx)),'constant')
+  File "<__array_function__ internals>", line 6, in pad
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\numpy\lib\arraypad.py", line 793, in pad
+    pad_width = _as_pairs(pad_width, array.ndim, as_index=True)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\numpy\lib\arraypad.py", line 564, in _as_pairs
+    raise ValueError("index can't contain negative values")
+ValueError: index can't contain negative values
+

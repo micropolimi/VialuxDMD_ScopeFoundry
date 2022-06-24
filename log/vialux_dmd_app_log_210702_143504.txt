@@ -1,0 +1,25 @@
+2021-07-02T14:36:27|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\ScopeFoundry\hardware.py", line 160, in <lambda>
+    op_button.clicked.connect(lambda checked, f=op_func: f())
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_hw.py", line 124, in generate_sequence
+    self.vialux.allocate_memory(npatt = nz, bitDepth = 8)
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_device.py", line 40, in allocate_memory
+    bitDepth = bitDepth)   #quantization of the image (1-8)
+  File "C:\Programmi laboratorio\Python\VialuxDMDlibraries\ALP4.py", line 468, in SeqAlloc
+    self._ALPLib.AlpSeqAlloc(self.ALP_ID, ct.c_long(bitDepth), ct.c_long(nbImg), ct.byref(SequenceId)),
+AttributeError: 'ALP4' object has no attribute '_ALPLib'
+
+2021-07-02T14:36:33|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\ScopeFoundry\hardware.py", line 219, in enable_connection
+    raise err
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\ScopeFoundry\hardware.py", line 212, in enable_connection
+    self.disconnect()
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_hw.py", line 63, in disconnect
+    self.vialux.close()
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_device.py", line 107, in close
+    self.dmd.Halt()
+  File "C:\Programmi laboratorio\Python\VialuxDMDlibraries\ALP4.py", line 1029, in Halt
+    self._checkError(self._ALPLib.AlpDevHalt(self.ALP_ID), 'Cannot stop device.')
+AttributeError: 'ALP4' object has no attribute '_ALPLib'
+
+2021-07-02T14:49:51|ERROR|vialux_dmd_app|tried to disconnect VialuxDmdHW: 'ALP4' object has no attribute '_ALPLib'

@@ -1,0 +1,92 @@
+2022-06-21T15:48:30|ERROR|tornado.general|Uncaught exception in ZMQStream callback
+Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 431, in _run_callback
+    callback(*args, **kwargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\jupyter_client\threaded.py", line 121, in _handle_recv
+    msg_list = self.ioloop._asyncio_event_loop.run_until_complete(get_msg(future_msg))
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 475, in run_until_complete
+    self.run_forever()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 432, in run_forever
+    'Cannot run the event loop while another loop is running')
+RuntimeError: Cannot run the event loop while another loop is running
+2022-06-21T15:48:30|ERROR|tornado.general|Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 448, in _handle_events
+    self._handle_recv()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 477, in _handle_recv
+    self._run_callback(callback, msg)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 431, in _run_callback
+    callback(*args, **kwargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\jupyter_client\threaded.py", line 121, in _handle_recv
+    msg_list = self.ioloop._asyncio_event_loop.run_until_complete(get_msg(future_msg))
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 475, in run_until_complete
+    self.run_forever()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 432, in run_forever
+    'Cannot run the event loop while another loop is running')
+RuntimeError: Cannot run the event loop while another loop is running
+2022-06-21T15:48:30|ERROR|asyncio|Exception in callback BaseAsyncIOLoop._handle_events(5524, 1)
+handle: <Handle BaseAsyncIOLoop._handle_events(5524, 1)>
+Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\tornado\platform\asyncio.py", line 189, in _handle_events
+    handler_func(fileobj, events)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 448, in _handle_events
+    self._handle_recv()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 477, in _handle_recv
+    self._run_callback(callback, msg)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 431, in _run_callback
+    callback(*args, **kwargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\jupyter_client\threaded.py", line 121, in _handle_recv
+    msg_list = self.ioloop._asyncio_event_loop.run_until_complete(get_msg(future_msg))
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 475, in run_until_complete
+    self.run_forever()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 432, in run_forever
+    'Cannot run the event loop while another loop is running')
+RuntimeError: Cannot run the event loop while another loop is running
+2022-06-21T15:53:12|ERROR|tornado.general|Uncaught exception in ZMQStream callback
+Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 431, in _run_callback
+    callback(*args, **kwargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\jupyter_client\threaded.py", line 121, in _handle_recv
+    msg_list = self.ioloop._asyncio_event_loop.run_until_complete(get_msg(future_msg))
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 475, in run_until_complete
+    self.run_forever()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 432, in run_forever
+    'Cannot run the event loop while another loop is running')
+RuntimeError: Cannot run the event loop while another loop is running
+2022-06-21T15:53:12|ERROR|tornado.general|Uncaught exception in zmqstream callback
+Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 448, in _handle_events
+    self._handle_recv()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 477, in _handle_recv
+    self._run_callback(callback, msg)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 431, in _run_callback
+    callback(*args, **kwargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\jupyter_client\threaded.py", line 121, in _handle_recv
+    msg_list = self.ioloop._asyncio_event_loop.run_until_complete(get_msg(future_msg))
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 475, in run_until_complete
+    self.run_forever()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 432, in run_forever
+    'Cannot run the event loop while another loop is running')
+RuntimeError: Cannot run the event loop while another loop is running
+2022-06-21T15:53:12|ERROR|asyncio|Exception in callback BaseAsyncIOLoop._handle_events(6372, 1)
+handle: <Handle BaseAsyncIOLoop._handle_events(6372, 1)>
+Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\tornado\platform\asyncio.py", line 189, in _handle_events
+    handler_func(fileobj, events)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 448, in _handle_events
+    self._handle_recv()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 477, in _handle_recv
+    self._run_callback(callback, msg)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\zmq\eventloop\zmqstream.py", line 431, in _run_callback
+    callback(*args, **kwargs)
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\site-packages\jupyter_client\threaded.py", line 121, in _handle_recv
+    msg_list = self.ioloop._asyncio_event_loop.run_until_complete(get_msg(future_msg))
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 475, in run_until_complete
+    self.run_forever()
+  File "C:\Users\laboratorio\anaconda3\envs\DMD_py36\lib\asyncio\base_events.py", line 432, in run_forever
+    'Cannot run the event loop while another loop is running')
+RuntimeError: Cannot run the event loop while another loop is running

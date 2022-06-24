@@ -1,0 +1,9 @@
+2021-06-25T11:57:36|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\laboratorio\anaconda3\envs\DMD\lib\site-packages\ScopeFoundry\hardware.py", line 160, in <lambda>
+    op_button.clicked.connect(lambda checked, f=op_func: f())
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_hw.py", line 63, in generate_random_patterns
+    self.vialux.set_timing()
+  File "C:\Programmi laboratorio\Python\ScopeFoundryProjects\VialuxDMD_ScopeFoundry\DMD_device.py", line 61, in set_timing
+    Tpicture = int(Till*1000 + Tdead)
+TypeError: unsupported operand type(s) for *: 'method' and 'int'
+
